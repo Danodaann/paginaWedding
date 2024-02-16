@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Invitacion Boda | By Daniel Alejandro </title>
+    </head>
+    <body onclick="playAudio()">
+        <header class="header" id="header">
+            <nav class="nav container">
+                <!-- <a href="#" class="nav__logo">D.</a> -->
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Frase</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Galeria</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#lugar" class="nav__link">Lugar</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contador" class="nav__link">Cuenta Regresiva</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/fondo1.jpeg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__data-title"><b>El amor es eterno,</b> y el nuestro comienza aquí.</h1>
+                        <span class="home__data-subtitle"><strong>Gabriela Gordillo <br> & <br> Mario David Marín</strong></span>
+
+                        <!-- AUDIO -->
+                        <audio id="musica1" autoplay loop>
+                            <source src="assets/musica/cancion.mp3" type="audio/mpeg">
+                            Cancion. 
+                        </audio>
+                        <script>
+                            function playAudio() {
+                                document.getElementById('musica1').play();
+                            }
+                        </script>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="#" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!--==================== FRASE ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">“Amar no es mirarse el uno al otro; es mirar juntos en la misma dirección” - Antoine de Saint-Expupery</h2>
+                        <p class="about__description">“Las mejores cosas de la vida son aún más fantásticas, cuando son compartidas con personas tan maravillosas como tú,
+                            por ello queremos que seas parte de la celebración de nuestra boda” </p>
+                        <a href="#lugar" class="button">Lugar</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/galeria2.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/boda2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== GALERIA ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Galeria</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--====================  1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/moment1.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <!-- <h2 class="discover__title">2024</h2>
+                                <span class="discover__description">Descripcion</span> -->
+                            </div>
+                        </div>
+
+                        <!--====================  2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/moment2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <!-- <h2 class="discover__title">2024</h2>
+                                <span class="discover__description">Descripcion</span> -->
+                            </div>
+                        </div>
+
+                        <!--====================  3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/moment3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <!-- <h2 class="discover__title">2024</h2>
+                                <span class="discover__description">Descripcion</span> -->
+                            </div>
+                        </div>
+
+                        <!--====================  4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/moment4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <!-- <h2 class="discover__title">2024</h2>
+                                <span class="discover__description">Descripcion</span> -->
+                            </div>
+                        </div>
+
+                        <!--====================  5 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/moment5.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <!-- <h2 class="discover__title">2024</h2>
+                                <span class="discover__description">Descripcion</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== LUGAR  ====================-->
+            <section class="experience section" id="lugar">
+                <h2 class="section__title">Evento<br> Huayacán</h2>
+                <br>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">Ubicacion:</h2>
+                            <span class="experience__description"><!-- Contenedor para mostrar la dirección -->
+                                <div id="direccion">Tezontepec 200, Lomas de Jiutepec, 62560, Jiutepec, Morelos</div>
+                                <br>
+                                
+                                <!-- Botón para abrir Google Maps -->
+                                <button onclick="abrirGoogleMaps()">Mostrar en Google Maps</button>
+                               </span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">Inicio del Evento: </h2>
+                            <span class="experience__description">14:30 hrs</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">Hora de término: </h2>
+                            <span class="experience__description">23:00 hrs</span>
+                        </div>
+
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/lugar.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/lugar2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </section>
+
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">MOMENTOS...</h2>
+
+                <div class="place__container container grid">
+                    <!--====================  CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/img1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+
+
+                            <div class="place__data">
+                                <h3 class="place__title">Anillo</h3>
+                            
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--====================  CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/img2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+
+                            <div class="place__data">
+                                <h3 class="place__title">Propuesta</h3>
+                                <span class="place__subtitle">2024</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!--====================  CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/img3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+                            <div class="place__data">
+                                
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!--====================  CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/img4.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+
+                            <div class="place__data">
+                                <h3 class="place__title">Mexico</h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!--====================  CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/img5.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+
+                            <div class="place__data">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--====================  CARD 6 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/img6.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            
+
+                            <div class="place__data">
+                                
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--==================== COUNTDOWN ====================-->
+
+            <section>
+                <div class="contenedor" id="contador"> 
+                    <h3>Falta para el evento...</h3>
+                    <br><br>
+                    <div class="contenido">
+                      <div class="contador">
+                        <div class="responsivo1">
+                          <div class="cartel">
+                          <div id="dias"></div>
+                          <div class="h3"><h3>Días</h3></div>
+                        </div>
+                          <div class="cartel">
+                          <div id="horas"></div>
+                          <div class="h3"><h3>Horas</h3></div>
+                        </div>
+                        </div>
+                        <div class="responsivo2">
+                        <div class="cartel">
+                          <div id="minutos"></div>
+                          <div class="h3"><h3>Minutos</h3></div>
+                        </div>
+                        <div class="cartel">
+                          <div id="segundos"></div>
+                          <div class="h3"><h3>Segundos</h3></div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+
+            <!-- HOSPEDAJE  -->
+
+            <!--==================== HOSPEDAJE  ====================-->
+            <section class="experience section">
+                <h2 class="section__title">Hospedaje</h2>
+                <br>
+
+                <div class="experience__container container grid">
+
+
+                    <div class="experience__img grid">
+
+                        
+                    <!--====================  CARD HOTEL ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/hotel1.jpg" alt="" class="place__img">
+                        <div class="place__content">
+                            <span class="place__rating"> 5
+                                <i class="ri-star-line place__rating-icon"></i>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Hotel Camino Real Sumiya</h3>
+                            </div>
+                            <span class="experience__description">Antiguo camino a Jiutepec S/N, José G. Parres Jiutepec
+                                777 329 9888</span>
+                        </div>
+                    </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            
+        
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+ 
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2024 Daniel Alejandro. All rigths reserved.</p>
+ 
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!--=============== CUENTA ATRAS JS ===============-->
+        <script src="assets/js/counter.js"></script>
+
+        <!--=============== CUENTA ATRAS JS ===============-->
+        <script src="assets/js/ubi.js"></script>
+
+
+    </body>
+</html>
